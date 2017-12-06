@@ -1,0 +1,19 @@
+<mat-card tabindex="0" class="dialog-box">
+    <mat-icon (click)="dialogRef.close(false)" class="close-icon" *ngIf="needCloseBtn">close</mat-icon>
+    <div>
+        <div [class]="messageClass">
+            <span [style.color]="iconColor" class="float-left" *ngIf="needIcon"><mat-icon>{{icon}}</mat-icon>
+            </span>
+            <span [innerHTML]="message" class="float-left"></span>
+            <br style="clear: left"/>
+        </div>
+        <div *ngIf="dialogType == 'loader'">
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </div>
+        <div *ngIf="dialogType == 'confirm'">
+            <button mat-button>{{btnOkTxt}}</button>
+            <button mat-button type="button" matDialogClose>{{btnCancelTxt}}</button>
+        </div>
+
+    </div>
+</mat-card>

@@ -1,0 +1,57 @@
+.space-fill {
+    flex: 1 1 auto;
+}
+
+.mat-dialog-container {
+    padding: 0;
+}
+
+.mat-card {
+    min-width: 200px;
+}
+
+.mat-icon {
+    cursor: pointer;
+}
+
+.mat-card-header-text {
+    margin: 0
+}
+
+.close-icon.mat-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 18px;
+    width: 18px;
+}
+
+.close-icon.material-icons {
+    font-size: 14px;
+}
+
+.error-div {
+    font-family: Arbutus;
+    font-size: 15px;
+    color: #f44336;
+    max-width: 700px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    background-color: #ddd;
+
+}
+
+.red-text {
+    color: #f44336;
+}
+
+.green-text {
+    color: green;
+}
+
+.float-left {
+    float: left;
+}
+div{
+    font-size: 14px;
+}
